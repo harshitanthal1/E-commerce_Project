@@ -27,19 +27,16 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/seller/add-product" element={<AddProductPage />} />
-          <Route path="/seller/display-product" element={<DisplayProductPage />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/orders" element={<Orders />} />
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/seller/add-product" element={<AddProductPage />} />
+        <Route path="/seller/display-product" element={<DisplayProductPage />} />
+        <Route path="/seller/orders" element={<OrdersPage />} />
+      </Routes>
+    </Router>
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />

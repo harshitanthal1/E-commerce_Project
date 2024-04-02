@@ -1,3 +1,4 @@
+// Home.jsx
 import React, { useEffect, useState } from 'react';
 import { fetchProductsByCategory } from '../services/productService';
 
